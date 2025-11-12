@@ -7,8 +7,7 @@ import math
 #Transformer主要包括六个模块，按照论文中的架构图进行分别计算，首先是Embedding模块
 class Embeddings(nn.Module):
     #vocab_size词汇大小；d_model要映射为几维的向量
-    def __init__(se
-        lf, vocab_size, d_model):
+    def __init__(self, vocab_size, d_model):
         #继承torch
         super().__init__()
         #编码过程直接继承
